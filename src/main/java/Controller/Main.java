@@ -1,15 +1,17 @@
 package Controller;
 
 import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class Main {
 
     @RequestMapping(value = "/")
-    public String Homework(){
-        String str = "hello world!";
-        System.out.println("hello world!");
-        return str;
+    public ModelAndView hello(){
+        String  msg = "hello world!";
+        System.out.println(msg);
+        return new ModelAndView("/hello","msg",msg);
     }
 }
