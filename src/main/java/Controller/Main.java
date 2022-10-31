@@ -7,7 +7,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class Main {
-
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
     @RequestMapping(value = "/")
     public ModelAndView hello(){
         String  msg = "hello world!";

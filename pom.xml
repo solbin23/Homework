@@ -65,6 +65,7 @@
           <configuration>
             <archive>
               <manifest>
+                <addClasspath>true</addClasspath>
                 <mainClass>Controller.Main</mainClass>
               </manifest>
             </archive>
