@@ -13,6 +13,6 @@
 
 </head>
 <body>
-<span>${msg}</span>
+<span>${msg}${msg}</span>
 </body>
 </html>
